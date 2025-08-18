@@ -39,19 +39,51 @@ de identidades em aplicações que precisam de integração com AD.
 
 ## Resumo
 
-| Serviço                  | O que é                                | Quando usar                  | Vantagens                                  | Limitações                    |
-|---------------------------|----------------------------------------|------------------------------|--------------------------------------------|--------------------------------|
-| **AWS Managed Microsoft AD** | Active Directory real, rodando como   | Quando precisa de um **AD     | - Total compatibilidade com AD.             | Custo mais alto em relação às  |
-|                           | serviço gerenciado da AWS.             | completo** na nuvem (ex.:     | - Multi-AZ para alta disponibilidade.       | demais opções.                 |
-|                           |                                        | apps corporativos, integração | - Pode criar relações de confiança com AD   |                                |
-|                           |                                        | com Exchange, SharePoint,     |   local.                                    |                                |
-|                           |                                        | SQL Server).                  |                                            |                                |
-| **AD Connector**          | Proxy que redireciona requisições      | Quando já tem um **AD local** | - Não replica dados.                        | Depende totalmente do AD local.|
-|                           | para o AD local (não cria diretório).  | e só quer usar credenciais    | - Usuários continuam gerenciados no AD      | Se ele cair, a autenticação na |
-|                           |                                        | dele em serviços AWS          |   local.                                    | AWS também cai.                 |
-|                           |                                        | (WorkSpaces, WorkDocs,        | - Baixo custo.                              |                                |
-|                           |                                        | WorkMail).                    |                                            |                                |
-| **Simple AD**             | Diretório básico compatível com Samba  | Ambientes de teste, pequenos  | - Mais barato.                              | Sem todas as features do AD.   |
-|                           | AD (limitado).                         | workloads, ou quando precisa  | - Fácil de configurar.                      | Limitado em escalabilidade.    |
-|                           |                                        | só de funcionalidades simples |                                            | Não suporta relações de confiança|
-|                           |                                        | de diretório.                 |                                            | com AD local.                   |
+### AWS Managed Microsoft AD
+
+Active Directory real, rodando como serviço gerenciado da AWS.
+
+**Quando usar**: Quando precisa de um **AD completo** na nuvem (ex.: apps
+corporativos, integração com Exchange, SharePoint, PostgreSQL).  
+
+**Vantagens**: 
+
+ - Total compatibilidade com AD;  
+ - Multi-AZ para alta disponibilidade;  
+ - Pode criar relações de confiança com AD local.
+
+**Limitações**: 
+
+Custo mais alto em relação às demais opções.
+
+### AD connector
+
+Proxy que redireciona requisições para o AD local (não cria diretório).
+
+**Quando usar**: Quando já tem um AD local e só quer usar credenciais dele em
+serviços AWS (WorkSpaces, WorkDocs, WorkMail).
+
+**Vantagens**: 
+
+ - Não replica dados;
+ - Usuários continuam gerenciados no AD local;
+ - Baixo custo.
+
+**Limitações**: Depende totalmente do AD local. Se ele cair, a autenticação na
+AWS também cai.
+
+### Simple AD
+
+Diretório básico compatível com SAMBA AD (limitado).
+
+**Quando usar**: Ambientes de teste, pequenos workloads, ou quando precisa só de
+funcionalidades simples de diretório.
+
+**Vantagens**: 
+ - Mais barato;
+ - Fácil de configurar.
+
+**Limitações**:
+ - Sem todas as features do AD;
+ - Limitado em escalabilidade;
+ - Não suporta relações de confiança com AD local.
