@@ -7,8 +7,8 @@ autogerenciadas, para diferentes casos de uso.
 
 | Serviço               | Tipo                  | Descrição                                                                 |
 |-----------------------|----------------------|---------------------------------------------------------------------------|
-| **Amazon RDS**        | Relacional (SQL)    | Serviço gerenciado para MySQL, PostgreSQL, MariaDB, Oracle e SQL Server.|
-| **Amazon Aurora**     | Relacional (SQL)    | Compatível com MySQL e PostgreSQL, alta performance e escalabilidade.    |
+| **Amazon RDS**        | Relacional (SQL)    | Serviço gerenciado para PostgreSQL, SQL Server, Oracle e MariaDB, MySQL.|
+| **Amazon Aurora**     | Relacional (SQL)    | Compatível com PostgreSQL e MySQL, alta performance e escalabilidade.    |
 | **Amazon Redshift**   | Data Warehouse       | Banco analítico para BI e análise de grandes volumes de dados.           |
 | **Amazon DynamoDB**   | NoSQL (Chave-valor) | Gerenciado, rápido, escalável para aplicações serverless e baixa latência.|
 | **Amazon DocumentDB** | NoSQL (Documentos)   | Compatível com MongoDB, usado para documentos JSON.                      |
@@ -22,8 +22,8 @@ autogerenciadas, para diferentes casos de uso.
 
 | Serviço        | Tipo de Banco    | Modelo de Dados       | Caso de Uso Principal                   | Escalabilidade         | Cobrança |
 |---------------|------------------|------------------------|-----------------------------------------|------------------------|----------|
-| **Amazon RDS** | Relacional (SQL) | MySQL, PostgreSQL, Oracle, SQL Server, MariaDB | Aplicações transacionais (OLTP)       | Vertical e limitada horizontalmente | Por instância e armazenamento |
-| **Amazon Aurora** | Relacional (SQL) | Compatível com MySQL e PostgreSQL | Alta performance e disponibilidade para apps críticos | Horizontal e automática | Por instância e I/O |
+| **Amazon RDS** | Relacional (SQL) | PostgreSQL, Oracle, SQL Server, MariaDB, MySQL | Aplicações transacionais (OLTP)       | Vertical e limitada horizontalmente | Por instância e armazenamento |
+| **Amazon Aurora** | Relacional (SQL) | Compatível com PostgreSQL e MySQL | Alta performance e disponibilidade para apps críticos | Horizontal e automática | Por instância e I/O |
 | **Amazon DynamoDB** | NoSQL          | Chave-valor e documento | Aplicações serverless, alta escala, baixa latência | Totalmente gerenciado, escalável automaticamente | Por leitura/escrita e armazenamento |
 | **Amazon Redshift** | Data Warehouse | Colunar (OLAP)       | Análise de grandes volumes de dados (BI) | Escala em clusters     | Por nó e armazenamento |
 
