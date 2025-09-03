@@ -8,6 +8,10 @@ otimizar e garantir segurança.
 
 ## Principais conceitos
 
+- **Regiões e zonas de disponibilidade (AZs)**. 
+    - **Região**: área geográfica que contém várias AZs;
+    - **AZ (Availability Zone)**: _data centers_ isolados dentro da região.
+
 - 
 
 ## Serviços de networking na AWS
@@ -32,3 +36,13 @@ otimizar e garantir segurança.
 
 
 https://chatgpt.com/share/68b5b2ad-b2d0-800d-8a09-d9363384de68
+
+
+
+
+
+VPC (Virtual Private Cloud)
+
+Rede virtual isolada dentro da AWS.
+
+Permite criar sub-redes públicas e privadas.
