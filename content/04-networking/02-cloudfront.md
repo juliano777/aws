@@ -3,7 +3,7 @@
 É o serviço de CDN (Cloud Delivery Network) da AWS.  
 Ele distribui conteúdo (arquivos estáticos, vídeos, sites, APIs) de forma
 rápida, segura e com baixa latência, entregando-os a partir de
-_edge locations_espalhadas globalmente.
+_edge locations_ espalhadas globalmente.
 
 | Recurso/Característica      | Descrição                                                                 |
 |-----------------------------|---------------------------------------------------------------------------|
