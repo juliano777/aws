@@ -12,7 +12,18 @@ otimizar e garantir segurança.
     - **Região**: área geográfica que contém várias AZs;
     - **AZ (Availability Zone)**: _data centers_ isolados dentro da região.
 
-- 
+- **VPC (Virtual Private Cloud)**. 
+    - Rede virtual isolada dentro da AWS;
+    - Permite criar sub-redes públicas privadas.
+
+- **Subnets**. 
+    - Partições da VPC para organizar recursos. 
+
+- **Roteamento**. 
+    - Tabelas de notas definem para onde o tráfego vai.
+
+- **Security groups e NACLs**. 
+    - Controles de segurança para instâncias e sub-redes.    
 
 ## Serviços de networking na AWS
 
@@ -32,17 +43,11 @@ otimizar e garantir segurança.
 
 ## Principais recursos na Amazon VPC
 
-- 
-
-
-https://chatgpt.com/share/68b5b2ad-b2d0-800d-8a09-d9363384de68
-
-
-
-
-
-VPC (Virtual Private Cloud)
-
-Rede virtual isolada dentro da AWS.
-
-Permite criar sub-redes públicas e privadas.
+- **CIDR blocks**: define o espaço de IP.
+- **Subnets públicas e privadas**:
+    - **Pública**: acessível via Internet Gateway;
+    - **Privada**: acessível via NAT gateway.
+- **Internet Gateway (IGW)**: permite o acesso à Internet.
+- **NAT Gateway**: acesso à internet para instâncias privadas.
+- **Peering de VPCs**: conecta VPCs diferentes.
+- **Transit Gateway**: conecta múltiplas VPCs e redes.
