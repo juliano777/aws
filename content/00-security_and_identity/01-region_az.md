@@ -9,12 +9,12 @@ falhas em larga escala.
 Há regiões na América do Norte, América do Sul, Oriente Médio, África e
 Ásia-Pacífico.
 
-Cada região contém várias Availability Zones.
+Cada região contém várias _availability zones_.
 
 Exemplos de regiões:
 
-- sa-east-1 (São Paulo, Brasil);
-- us-east-1 (Virgínia do Norte, EUA)
+- `sa-east-1` (São Paulo, Brasil);
+- `us-east-1` (Virgínia do Norte, EUA).
 
 ### Importância de uma region
 
@@ -35,9 +35,8 @@ redundantes, de  alta velocidade e de baixa latência.
 Por exemplo, a region `us-east-1` pode ter as seguintes AZs:
 
 - `us-east-1a`;
-- `us-east-1b`
-- `us-east-1c`
-. . .
+- `us-east-1b`;
+- `us-east-1c`.
 
 ### Características de uma AZ
 
