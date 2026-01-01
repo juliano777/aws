@@ -17,7 +17,19 @@ otimizar e garantir segurança.
     - Permite criar sub-redes públicas privadas.
 
 - **Subnets**. 
-    - Partições da VPC para organizar recursos. 
+    - Partições da VPC para organizar recursos;
+    - IPs reservados de subnets  
+      Supondo uma subnet de CIDR `10.0.0.0/24`:  
+      - `10.0.0.0`: endereço de rede;  
+      - `10.0.0.1`: roteador VPC (_VPC router_);  
+      - `10.0.0.2`: servidor DNS VPC;  
+      - `10.0.0.3`: uso futuro;
+      - `10.0.0.255`: endereço de _broadcast_.
+    - Subnets públicas: têm rota para a internet via `Internet Gateway`.  
+      Requer endereços IPs que sejam resolvíveis publicamente;  
+    - Subnets privadas: **não** têm rota direta para a internet. 
+      Precisa de um dispositivo NAT para isso.
+      Utiliza endereços IPs privados. 
 
 - **Roteamento**. 
     - Tabelas de notas definem para onde o tráfego vai.
