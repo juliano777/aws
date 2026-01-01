@@ -37,6 +37,7 @@
 - [AWS CloudFormation](content/05-management_and_governance/01-cloudformation.md)
 - [AWS CloudWatch](content/05-management_and_governance/02-cloudwatch.md)
 - [AWS Auto Scaling](content/05-management_and_governance/03-auto_scaling.md)
+- [AWS CloudShell](content/05-management_and_governance/04-cloudshell.md)
 
 # Machine Learning
 - [AWS Machine Learning](content/06-machine_learning/00-machine_learning.md)
