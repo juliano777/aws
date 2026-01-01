@@ -3,8 +3,10 @@
 É uma rede virtual logicamente isolada na nuvem da Amazon.  
 Funciona como se fosse uma rede tradicional de datacenter, mas com a vantagem
 de ser definida por software totalmente personalizável.  
+VPCs são recursos regionais. São limitadas a VPC por _region_, por conta.
 
 ## Principais pontos sobre o AWS VPC
+
 - **Isolamento**: cada VPC é isolada das demais por padrão;
 - **Endereçamento**: pode-se definir o espaço de endereços IP usando CIDR blocks (e. g.: 10.0.0.0/8);
 - **Subnets**: a VPC é dividida em sub-redes (públicas e privadas);
