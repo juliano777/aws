@@ -20,9 +20,51 @@ acesso e workload.
 ## 📦 Block Storage
 - **Amazon EBS (Elastic Block Store)**  
   - Volumes de blocos persistentes para EC2.  
-  - Tipos: SSD (io1/io2, gp3) e HDD (st1, sc1).  
   - Usado para bancos de dados, sistemas operacionais, aplicações que precisam
     de baixa latência.  
+  
+  **Tipos**  
+    - **Propósitos gerais: `gp2` / `gp3`**  
+      Ideal para web servers.  
+      Cargas que necessitam de um bom equilíbrio de performance e custo.  
+
+      **`gp2`**  
+      - Adequado para discos de boot e aplicações gerais;  
+      - Até 16k IOPS por volume;
+      - Até 99,9% de durabilidade.
+  
+      **`gp3`**  
+      - Adequado aplicações de alta performance;  
+      - Desempenho de referência esperado de 3k IOPS e 125MiB/s, independente
+        do tamanho do volume;  
+      - Até 99,9% de durabilidade.
+
+    - **SSD com IOPS provisionados: `io1`** / **`io2`**  
+      Banco de dados relacional hospedado em EC2 com alta demanda de I/O.  
+      Cargas que necessitam de consistência e altos níveis de performance.  
+
+      **`io1`**  
+      - Adequado para OLTP e aplicações de latência sensível;  
+      - 50 IOPS/GiB e até 64k IOPS por volume;
+      - **Mais barato** do que o `io1`;
+      - Até 99,9% de durabilidade;
+      - Volume de IOPS de última geração.
+  
+      **`io2`**  
+      - Adequado para OLTP e aplicações de latência sensível;  
+      - 500 IOPS/GiB e até 64k IOPS por volume;
+      - Alta performance e **mais caro**;
+      - Até 99,999% de durabilidade.    
+    
+      > O uso de `io1` em vez de `io2` só faz sentido quando há motivos de
+      > aplicações legadas e não é aconselhável para novos projetos.
+
+    - **Magnéticos (HDD): `sc1`** / **`st1`**  
+      Arquivamento de dados e backup.  
+      Para grandes volumes de dados que não sejam acessados frequentemente que
+      precisam ser aramazenados, economicamente viável para retenção de longo
+      prazo.
+
 
 ## 🪣 Object Storage
 - **Amazon S3 (Simple Storage Service)**  
