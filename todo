@@ -1,3 +1,6 @@
 EC2 Hibernate
 EBS sc1 / st1
-EBS multi-attach volumes
+EBS multi-attach volumes podem ser anexados a até 16 instâncias na mesma AZ e precisam de um FS cluster based.
+EBS Encryption
+Instance Store Volume (https://chatgpt.com/share/6963a20f-9a54-800d-a926-6da3067c1501)
+Bastion host

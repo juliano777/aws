@@ -65,6 +65,19 @@ acesso e workload.
       precisam ser aramazenados, economicamente viável para retenção de longo
       prazo.
 
+      **`st1`**  
+      - Adequado para big data, DWs, ETL;  
+      - _Throughput_ máximo é 500 MB/s por volume;
+      - Não pode ser usado para _boot_;
+      - Até 99,9% de durabilidade.
+  
+      **`sc2`**  
+      - Adequado para dados acessados com pouca frequência;
+      - _Throughput_ máximo é 250 MB/s por volume;
+      - Não pode ser usado para _boot_;
+      - **Menor custo**;
+      - Até 99,9% de durabilidade.
+
 
 ## 🪣 Object Storage
 - **Amazon S3 (Simple Storage Service)**  
