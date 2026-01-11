@@ -4,3 +4,5 @@ EBS multi-attach volumes podem ser anexados a até 16 instâncias na mesma AZ e 
 EBS Encryption
 Instance Store Volume (https://chatgpt.com/share/6963a20f-9a54-800d-a926-6da3067c1501)
 Bastion host
+SSM
+EC2 Metadata
